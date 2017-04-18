@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.isabel.locationclock.MainActivity">
+
+    <Button
+        android:id="@+id/workButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Work"
+        app:layout_constraintBottom_toTopOf="@+id/familyButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/schoolButton" />
+
+    <Button
+        android:id="@+id/schoolButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="School"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintRight_toLeftOf="@+id/workButton"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/friendsButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Friend's"
+        app:layout_constraintBottom_toTopOf="@+id/travelingButton"
+        app:layout_constraintTop_toBottomOf="@+id/familyButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/shoppingButton" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingButton"
+        app:layout_constraintTop_toBottomOf="@+id/schoolButton"
+        app:layout_constraintRight_toLeftOf="@+id/familyButton"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/gymButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Gym"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingButton"
+        app:layout_constraintRight_toLeftOf="@+id/travelingButton"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a location to set:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/workButton" />
+
+    <Button
+        android:id="@+id/familyButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Family"
+        app:layout_constraintBottom_toTopOf="@+id/friendsButton"
+        app:layout_constraintTop_toBottomOf="@+id/workButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/homeButton" />
+
+    <Button
+        android:id="@+id/shoppingButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Shopping"
+        app:layout_constraintBottom_toTopOf="@+id/gymButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:layout_constraintRight_toLeftOf="@+id/friendsButton"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/travelingButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Traveling"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendsButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/gymButton" />
+
+</android.support.constraint.ConstraintLayout>
